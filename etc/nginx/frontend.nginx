@@ -6,7 +6,7 @@ server {
     listen [::]:443 ssl;
 
     ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
-    ssl_certificate_key /almoeeni/USER/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
+    ssl_certificate_key /almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /home/almoeeni/starter-app/src/www/frontend;
     index index.php index.html index.htm;
@@ -63,7 +63,7 @@ server {
     listen [::]:8443 ssl;
 
     ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
-    ssl_certificate_key /almoeeni/USER/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
+    ssl_certificate_key /almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /home/USER/starter-app/src/www/frontend;
     index index_dev.php index.html index.htm;
