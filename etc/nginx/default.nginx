@@ -11,14 +11,15 @@ server {
     listen 7860 ssl;
     listen [::]:7860 ssl;
 
-    ssl_certificate /home/USER/starter-app/etc/ssl/CERTIFICATE.crt;
-    ssl_certificate_key /home/USER/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
+    ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
+
+    ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /var/www/html;
     index index.php index.html index.htm;
 
-    server_name SERVER.DOMAIN.TLD;
-    if ($host != "SERVER.DOMAIN.TLD") {
+    server_name "fazal-backend.mediapark.work";
+    if ($host != "fazal-backend.mediapark.work") {
         return 403;
     }
 
@@ -28,13 +29,13 @@ server {
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
     }
 
     location ~ /\.ht {
         deny all;
     }
 
-    error_log /home/USER/starter-app/tmp/log/frontend_error.log;
-    access_log /home/USER/starter-app/tmp/log/frontend_access.log;
+    error_log /home/almoeeni/starter-app/tmp/log/frontend_error.log;
+    access_log /home/almoeeni/starter-app/tmp/log/frontend_access.log;
 }
