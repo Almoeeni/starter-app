@@ -1,4 +1,5 @@
 <?php
+echo "12";
 declare(strict_types=1);
 
 require "../../autoload.php";
