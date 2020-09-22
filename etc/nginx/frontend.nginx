@@ -11,8 +11,8 @@ server {
     root /home/almoeeni/starter-app/src/www/frontend;
     index index.php index.html index.htm;
 
-    server_name fazal-frontend.mediapark.work;
-    if ($host != "fazal-frontend.mediapark.work") {
+    server_name fazal-backend.mediapark.work;
+    if ($host != "fazal-backend.mediapark.work") {
         return 403;
     }
 
