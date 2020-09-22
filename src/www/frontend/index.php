@@ -1,7 +1,7 @@
 <?php
-echo "123";
-declare(strict_types=1);
 
+declare(strict_types=1);
+echo "123";
 require "../../autoload.php";
 
 try {
