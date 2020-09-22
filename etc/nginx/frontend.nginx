@@ -5,8 +5,7 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
 
-    ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTI
-    FICATE.crt;
+    ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /home/almoeeni/starter-app/src/www/frontend;
