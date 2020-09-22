@@ -15,12 +15,12 @@ server {
 
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
-    root /home/almoeeni/starter-app/src/www/frontend;
-       index index.php index.html index.htm;
+    root /var/www/html;
+    index index.php index.html index.htm;
 
     server_name fazal-backend.mediapark.work;
     if ($host != "fazal-backend.mediapark.work") {
-        return "Hello";
+        return 403;
     }
 
     location / {
