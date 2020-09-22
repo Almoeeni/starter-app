@@ -15,7 +15,7 @@ server {
 
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
-    root `1`
+    root /var/www/html;
     index index.php index.html index.htm;
 
     server_name fazal-backend.mediapark.work;
