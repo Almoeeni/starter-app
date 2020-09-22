@@ -8,7 +8,7 @@ server {
     ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
-    root /home/almoeeni/starter-app/src/www/frontend;
+    root /var/www/html;
     index index.json;
 
     server_name fazal-frontend.mediapark.work;
@@ -65,7 +65,7 @@ server {
     ssl_certificate /home/almoeeni/starter-app/etc/ssl/CERTIFICATE.crt;
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
-    root /home/almoeeni/starter-app/src/www/frontend;
+    root /var/www/html;
     index index_dev.php index.html index.htm;
 
     server_name fazal-frontend.mediapark.work;
