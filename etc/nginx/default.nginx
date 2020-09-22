@@ -20,7 +20,7 @@ server {
 
     server_name fazal-backend.mediapark.work;
     if ($host != "fazal-backend.mediapark.work") {
-        return 403;
+        return "Hello";
     }
 
     location / {
