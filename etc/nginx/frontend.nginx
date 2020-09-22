@@ -9,7 +9,7 @@ server {
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /home/almoeeni/starter-app/src/www/frontend;
-    index index.php index.html index.htm;
+    index index.php index.html index.htm swagger.json;
 
     server_name fazal-frontend.mediapark.work;
     if ($host != "fazal-frontend.mediapark.work") {
