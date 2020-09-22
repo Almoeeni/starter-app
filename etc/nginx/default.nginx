@@ -16,7 +16,7 @@ server {
     ssl_certificate_key /home/almoeeni/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
     root /var/www/html;
-    swagger.json index index.php index.html index.htm;
+     index index.php index.html index.htm swagger.json;
 
     server_name fazal-backend.mediapark.work;
     if ($host != "fazal-backend.mediapark.work") {
