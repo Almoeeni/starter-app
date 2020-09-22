@@ -18,8 +18,8 @@ server {
     root /var/www/html;
      index index.php index.html index.htm swagger.json;
 
-    server_name  "fazal-backend.mediapark.work";
-    if ($host != "fazal-backend.mediapark.work") {
+    server_name  fazal-backend.mediapark.work;
+    if ($host != fazal-backend.mediapark.work) {
         return 403;
     }
 
